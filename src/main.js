@@ -26,7 +26,7 @@ app.innerHTML = `
 
     <header class="site-header" data-header>
       <a class="brand" href="#top" data-scroll-link aria-label="VitalForge home">
-        <span class="brand-mark" aria-hidden="true"><span></span></span>
+        <img class="brand-logo" src="/assets/logo.png" alt="VitalForge logo" />
         <span class="brand-name"><b>Vital</b><em>Forge</em></span>
       </a>
       <nav class="desktop-nav" aria-label="Primary navigation">
@@ -169,7 +169,7 @@ app.innerHTML = `
         </div>
       </section>
 
-      <footer class="site-footer section-paper"><div class="page-width footer-row"><div class="footer-brand"><span class="brand-mark" aria-hidden="true"><span></span></span><span><b>Vital</b><em>Forge</em></span></div><p>Project portfolio / a healthier baseline, built deliberately.</p><a href="#top" class="footer-top" data-scroll-link>↑ Top</a></div><div class="page-width footer-bottom"><span>Python · Tkinter · MySQL · Matplotlib</span><span>Independent build / 2024—25</span></div></footer>
+      <footer class="site-footer section-paper"><div class="page-width footer-row"><div class="footer-brand"><img class="brand-logo" src="/assets/logo.png" alt="VitalForge logo" /><span><b>Vital</b><em>Forge</em></span></div><p>Project portfolio / a healthier baseline, built deliberately.</p><a href="#top" class="footer-top" data-scroll-link>↑ Top</a></div><div class="page-width footer-bottom"><span>Python · Tkinter · MySQL · Matplotlib</span><span>Independent build / 2024—25</span></div></footer>
     </main>
   </div>
 `;
