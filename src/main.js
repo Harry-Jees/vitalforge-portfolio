@@ -34,6 +34,7 @@ app.innerHTML = `
         <a href="#capabilities" data-scroll-link>Capabilities</a>
         <a href="#architecture" data-scroll-link>Architecture</a>
         <a href="#timeline" data-scroll-link>Résumé</a>
+        <a href="#downloads" data-scroll-link>Downloads</a>
       </nav>
       <a class="header-cta" href="#outcomes" data-scroll-link>Explore the build ${icon("arrow", 15)}</a>
       <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-toggle><span></span><span></span></button>
@@ -42,7 +43,8 @@ app.innerHTML = `
         <a href="#capabilities" data-scroll-link>02 / Capabilities</a>
         <a href="#architecture" data-scroll-link>03 / Architecture</a>
         <a href="#timeline" data-scroll-link>04 / Résumé</a>
-        <a href="#outcomes" data-scroll-link>05 / Outcomes</a>
+        <a href="#downloads" data-scroll-link>05 / Downloads</a>
+        <a href="#outcomes" data-scroll-link>06 / Outcomes</a>
       </div>
     </header>
 
@@ -162,6 +164,17 @@ app.innerHTML = `
         </div>
       </section>
 
+      <section class="downloads section-paper" id="downloads" aria-labelledby="downloads-title">
+        <div class="page-width">
+          <div class="section-heading-row reveal"><div><p class="eyebrow">Take it with you</p><h2 id="downloads-title" class="section-title">The desktop<br><em>build.</em></h2></div><p class="section-aside">Download the VitalForge desktop experience for your computer. Replace the sample files in this repository with the final signed builds before sharing publicly.</p></div>
+          <div class="download-grid">
+            <article class="download-card download-card-windows reveal" data-tilt-card><div class="download-card-head"><span class="platform-chip">Windows</span><span class="platform-glyph">▣</span></div><div class="desktop-window" aria-hidden="true"><span class="window-bar"><i></i><i></i><i></i></span><span class="window-content"><b>VitalForge</b><em>vitalforge.exe</em></span></div><div class="download-card-copy"><h3>VitalForge for Windows</h3><p>Sample executable placeholder — replace with the final .exe build.</p><a class="download-button" href="/downloads/vitalforge.exe" download>Download .exe <span>↓</span></a></div></article>
+            <article class="download-card download-card-macos reveal" data-tilt-card><div class="download-card-head"><span class="platform-chip">macOS</span><span class="platform-glyph">●</span></div><div class="desktop-window mac-window" aria-hidden="true"><span class="window-bar"><i></i><i></i><i></i></span><span class="window-content"><b>VitalForge</b><em>vitalforge.app</em></span></div><div class="download-card-copy"><h3>VitalForge for macOS</h3><p>Sample app bundle archive — replace with the final signed .app package.</p><a class="download-button" href="/downloads/vitalforge.app.zip" download>Download .app <span>↓</span></a></div></article>
+          </div>
+          <div class="download-note reveal"><span>${icon("check", 13)}</span><p><strong>Release note:</strong> These are sample placeholders for the website flow. Drop your production artifacts into <code>public/downloads/</code>, keep the filenames, and sync the repository to update the links.</p></div>
+        </div>
+      </section>
+
       <section class="outcomes section-dark" id="outcomes" aria-labelledby="outcomes-title">
         <div class="page-width outcomes-grid">
           <div class="outcomes-intro reveal"><p class="eyebrow light">What remains</p><h2 id="outcomes-title" class="section-title light-title">A stronger<br><em>starting line.</em></h2><p>VitalForge is less about chasing a perfect day and more about giving the next day somewhere to begin.</p><a class="button button-lime" href="#top" data-scroll-link>Back to the beginning ${icon("arrow", 17)}</a></div>
@@ -278,6 +291,16 @@ if (!isTouch && !prefersReducedMotion) {
   document.querySelectorAll(".capability-card, .outcome-card, .flow-node").forEach((card) => {
     card.addEventListener("mouseenter", () => gsap.to(card, { y: -6, duration: 0.35, ease: "power2.out" }));
     card.addEventListener("mouseleave", () => gsap.to(card, { y: 0, duration: 0.45, ease: "power2.out" }));
+  });
+
+  document.querySelectorAll("[data-tilt-card]").forEach((card) => {
+    card.addEventListener("pointermove", (event) => {
+      const bounds = card.getBoundingClientRect();
+      const x = (event.clientX - bounds.left) / bounds.width - 0.5;
+      const y = (event.clientY - bounds.top) / bounds.height - 0.5;
+      gsap.to(card, { rotateY: x * 4, rotateX: y * -4, duration: 0.45, ease: "power2.out", overwrite: true });
+    });
+    card.addEventListener("pointerleave", () => gsap.to(card, { rotateX: 0, rotateY: 0, duration: 0.55, ease: "power3.out", overwrite: true }));
   });
 }
 
