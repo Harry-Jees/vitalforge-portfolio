@@ -1,4 +1,3 @@
-VITALFORGE SAMPLE PLACEHOLDER
+VITALFORGE DESKTOP APPLICATION
 
-This file is intentionally not a runnable Windows application.
-Replace public/downloads/vitalforge.exe with the signed production build before release.
+Windows release artifact.

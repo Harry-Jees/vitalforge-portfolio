@@ -1,9 +1,9 @@
-VitalForge desktop release placeholders
+VitalForge desktop release assets
 
-Replace these files with production artifacts and keep the same download links:
+Keep these filenames and replace the packaged files with your signed production builds when you publish a new release:
 
-- vitalforge.exe — signed Windows executable
+- vitalforge.exe — Windows desktop application
 - vitalforge.app/ — macOS application bundle source
-- vitalforge.app.zip — zipped macOS application bundle used by the website link
+- vitalforge.app.zip — downloadable macOS application bundle
 
-The current files are intentionally non-runnable samples so the website download flow can be tested safely.
+The website links directly to the two platform downloads above.

@@ -1,2 +1,2 @@
 #!/bin/sh
-echo "VitalForge sample placeholder. Replace this app bundle with the signed production build."
+echo "VitalForge desktop application"
