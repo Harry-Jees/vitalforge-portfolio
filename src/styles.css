@@ -193,3 +193,14 @@ button { color: inherit; font: inherit; }
 @media (prefers-reduced-motion: reduce) {
   .dashboard-preview::after { animation: none; display: none; }
 }
+
+
+.download-button-disabled { cursor: not-allowed; opacity: .62; background: #6e7d72 !important; color: var(--paper) !important; box-shadow: none !important; transform: none !important; }
+.download-button-disabled span { color: var(--paper) !important; }
+.release-status { display: grid; grid-template-columns: 1.1fr repeat(3, 1fr); gap: 12px; align-items: center; margin-top: 18px; padding: 17px 20px; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,253,247,.52); }
+.release-status-label { color: var(--forest); font-family: var(--mono); font-size: 9px; letter-spacing: .12em; text-transform: uppercase; }
+.release-status div { display: grid; gap: 4px; padding-left: 15px; border-left: 1px solid var(--line); }
+.release-status b { color: var(--forest); font-size: 11px; }
+.release-status span:not(.release-status-label) { color: #748078; font-size: 10px; line-height: 1.35; }
+@media (max-width: 900px) { .release-status { grid-template-columns: 1fr 1fr; } .release-status-label { grid-column: 1 / -1; } }
+@media (max-width: 600px) { .release-status { grid-template-columns: 1fr; gap: 14px; } .release-status-label { grid-column: auto; } .release-status div { padding: 0 0 0 12px; } }

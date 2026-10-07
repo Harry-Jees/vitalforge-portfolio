@@ -1,9 +1,9 @@
 VitalForge desktop release assets
 
-Keep these filenames and replace the packaged files with your signed production builds when you publish a new release:
+Current release status:
 
-- vitalforge.exe — Windows desktop application
-- vitalforge.app/ — macOS application bundle source
-- vitalforge.app.zip — downloadable macOS application bundle
+- vitalforge.exe — verified Windows 1.0.0 desktop release, linked from the website
+- macOS — build configuration present in the application repository; native build and verification pending
+- Linux — Debian/AppImage packaging configuration present; native build and verification pending
 
-The website links directly to the two platform downloads above.
+When publishing a new verified release, keep the Windows filename stable. Publish macOS and Linux artifacts only after building and testing them on their target platforms.

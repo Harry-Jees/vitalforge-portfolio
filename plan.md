@@ -10,3 +10,5 @@ Motion is an intentional part of the brand: Lenis provides smooth scrolling, GSA
 ## Desktop distribution update
 
 The site includes a responsive Material 3-inspired desktop download section with separate Windows and macOS cards. `public/downloads/vitalforge.exe` and `public/downloads/vitalforge.app.zip` are the stable platform download targets, with the macOS bundle source kept in `public/downloads/vitalforge.app/`.
+
+The application repository now reports version 1.0.0, includes a verified Windows executable at `dist/VitalForge.exe`, and contains configured but not yet natively verified macOS and Linux packaging. The website therefore exposes the current Windows executable and labels macOS/Linux as pending native verification instead of presenting unverified artifacts as ready downloads.

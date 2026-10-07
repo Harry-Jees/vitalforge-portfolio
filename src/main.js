@@ -143,7 +143,7 @@ app.innerHTML = `
             <div class="stack-row"><span>Interface</span><strong>Tkinter</strong><small>desktop UI</small></div>
             <div class="stack-row"><span>Data layer</span><strong>MySQL</strong><small>relational storage</small></div>
             <div class="stack-row"><span>Visuals</span><strong>Matplotlib</strong><small>progress charts</small></div>
-            <div class="stack-row"><span>Quality</span><strong>pytest</strong><small>database config tests</small></div>
+            <div class="stack-row"><span>Packaging</span><strong>PyInstaller</strong><small>native desktop builds</small></div>
           </div>
         </div>
       </section>
@@ -166,11 +166,12 @@ app.innerHTML = `
 
       <section class="downloads section-paper" id="downloads" aria-labelledby="downloads-title">
         <div class="page-width">
-          <div class="section-heading-row reveal"><div><p class="eyebrow">Take it with you</p><h2 id="downloads-title" class="section-title">The desktop<br><em>build.</em></h2></div><p class="section-aside">Download the VitalForge desktop application for your computer and keep your daily rhythm close.</p></div>
+          <div class="section-heading-row reveal"><div><p class="eyebrow">Take it with you</p><h2 id="downloads-title" class="section-title">Get<br><em>VitalForge.</em></h2></div><p class="section-aside">VitalForge 1.0.0 is available for Windows today. macOS and Linux packaging is in progress and will be published after native verification.</p></div>
           <div class="download-grid">
-            <article class="download-card download-card-windows reveal" data-tilt-card><div class="download-card-head"><span class="platform-chip">Windows</span><span class="platform-glyph">▣</span></div><div class="desktop-window" aria-hidden="true"><span class="window-bar"><i></i><i></i><i></i></span><span class="window-content"><b>VitalForge</b><em>vitalforge.exe</em></span></div><div class="download-card-copy"><h3>VitalForge for Windows</h3><p>Desktop application for Windows with the complete daily health loop.</p><a class="download-button" href="/downloads/vitalforge.exe" download>Download .exe <span>↓</span></a></div></article>
-            <article class="download-card download-card-macos reveal" data-tilt-card><div class="download-card-head"><span class="platform-chip">macOS</span><span class="platform-glyph">●</span></div><div class="desktop-window mac-window" aria-hidden="true"><span class="window-bar"><i></i><i></i><i></i></span><span class="window-content"><b>VitalForge</b><em>vitalforge.app</em></span></div><div class="download-card-copy"><h3>VitalForge for macOS</h3><p>Desktop application for Mac with the complete daily health loop.</p><a class="download-button" href="/downloads/vitalforge.app.zip" download>Download .app <span>↓</span></a></div></article>
+            <article class="download-card download-card-windows reveal" data-tilt-card><div class="download-card-head"><span class="platform-chip">Available now</span><span class="platform-glyph">▣</span></div><div class="desktop-window" aria-hidden="true"><span class="window-bar"><i></i><i></i><i></i></span><span class="window-content"><b>VitalForge</b><em>v1.0.0 · .exe</em></span></div><div class="download-card-copy"><h3>VitalForge for Windows</h3><p>The verified Windows desktop release with daily tracking, workouts, nutrition, goals, and progress charts.</p><a class="download-button" href="/downloads/vitalforge.exe" download>Download for Windows <span>↓</span></a></div></article>
+            <article class="download-card download-card-macos reveal" data-tilt-card><div class="download-card-head"><span class="platform-chip">Coming soon</span><span class="platform-glyph">●</span></div><div class="desktop-window mac-window" aria-hidden="true"><span class="window-bar"><i></i><i></i><i></i></span><span class="window-content"><b>VitalForge</b><em>macOS · in progress</em></span></div><div class="download-card-copy"><h3>VitalForge for macOS</h3><p>The macOS build configuration is ready; publishing follows a native build and verification pass.</p><span class="download-button download-button-disabled" aria-disabled="true">Coming soon <span>→</span></span></div></article>
           </div>
+          <div class="release-status reveal" aria-label="Release status"><span class="release-status-label">Release status</span><div><b>Windows</b><span>Available now · v1.0.0</span></div><div><b>macOS</b><span>Build configured · verification pending</span></div><div><b>Linux</b><span>Packaging configured · verification pending</span></div></div>
         </div>
       </section>
 
