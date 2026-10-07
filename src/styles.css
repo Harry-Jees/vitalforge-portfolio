@@ -176,3 +176,20 @@ button { color: inherit; font: inherit; }
 @media (max-width: 600px) {
   .downloads { padding-bottom: 106px; }.download-grid { grid-template-columns: 1fr; }.download-card { min-height: 350px; border-radius: 23px; }.desktop-window { width: 86%; min-height: 125px; margin-top: 24px; }.window-content { padding: 24px 20px; }
 }
+
+
+/* Official-site motion language */
+.brand-logo { object-position: center; box-shadow: 0 0 0 1px rgba(213,238,122,.18), 0 8px 20px rgba(0,0,0,.16); transition: transform .5s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease; }
+.brand:hover .brand-logo, .footer-brand:hover .brand-logo { transform: rotate(-7deg) scale(1.08); box-shadow: 0 0 0 1px rgba(213,238,122,.38), 0 10px 24px rgba(0,0,0,.2); }
+.dashboard-preview { position: relative; overflow: hidden; }
+.dashboard-preview::after { content: ''; pointer-events: none; position: absolute; inset: -35% 42% -35% -42%; background: linear-gradient(105deg, transparent 36%, rgba(255,255,255,.28) 49%, transparent 62%); transform: translateX(-120%) rotate(8deg); animation: dashboard-sheen 7s cubic-bezier(.4,0,.2,1) infinite; }
+@keyframes dashboard-sheen { 0%, 35% { transform: translateX(-120%) rotate(8deg); } 65%, 100% { transform: translateX(260%) rotate(8deg); } }
+.hero-orbit { will-change: transform; }
+.orbit-dot { will-change: transform, opacity; }
+.capability-card, .flow-node, .outcome-card, .download-card { will-change: transform; }
+.capability-card::after { content: ''; pointer-events: none; position: absolute; inset: 0; border-radius: inherit; opacity: 0; background: radial-gradient(circle at var(--spot-x, 50%) var(--spot-y, 50%), rgba(213,238,122,.2), transparent 34%); transition: opacity .35s ease; }
+.capability-card { position: relative; overflow: hidden; }
+.capability-card:hover::after { opacity: 1; }
+@media (prefers-reduced-motion: reduce) {
+  .dashboard-preview::after { animation: none; display: none; }
+}

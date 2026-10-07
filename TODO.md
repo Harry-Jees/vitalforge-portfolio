@@ -1,2 +1,4 @@
-
+- [ ] **Official VitalForge positioning** — The website presents VitalForge as the official desktop health companion, uses product-led copy throughout, and gives users clear paths to understand and download the product.
+- [ ] **Brand mark and favicon** — The supplied VitalForge mark is used as the header logo, footer logo, browser favicon, Apple touch icon, and managed project logo metadata.
+- [ ] **Motion design system** — The site uses GSAP/ScrollTrigger and Lenis for smooth scrolling, staged reveals, scroll-linked parallax, ambient orbit/dashboard motion, staggered content entrances, magnetic CTAs, and responsive pointer depth; touch devices and reduced-motion preferences receive calmer behavior.
 - [ ] **Desktop distribution downloads** — The website provides separate responsive Windows `.exe` and macOS `.app` download cards, serves the platform artifacts from stable paths in `public/downloads/`, and keeps the download links stable for future signed production builds.

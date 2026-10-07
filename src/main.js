@@ -30,21 +30,21 @@ app.innerHTML = `
         <span class="brand-name"><b>Vital</b><em>Forge</em></span>
       </a>
       <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="#story" data-scroll-link>Story</a>
-        <a href="#capabilities" data-scroll-link>Capabilities</a>
-        <a href="#architecture" data-scroll-link>Architecture</a>
-        <a href="#timeline" data-scroll-link>Résumé</a>
+        <a href="#story" data-scroll-link>Why VitalForge</a>
+        <a href="#capabilities" data-scroll-link>Experience</a>
+        <a href="#architecture" data-scroll-link>Technology</a>
+        <a href="#timeline" data-scroll-link>Method</a>
         <a href="#downloads" data-scroll-link>Downloads</a>
       </nav>
-      <a class="header-cta" href="#outcomes" data-scroll-link>Explore the build ${icon("arrow", 15)}</a>
+      <a class="header-cta" href="#downloads" data-scroll-link>Get VitalForge ${icon("arrow", 15)}</a>
       <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-toggle><span></span><span></span></button>
       <div class="mobile-menu" data-mobile-menu>
-        <a href="#story" data-scroll-link>01 / Story</a>
-        <a href="#capabilities" data-scroll-link>02 / Capabilities</a>
-        <a href="#architecture" data-scroll-link>03 / Architecture</a>
-        <a href="#timeline" data-scroll-link>04 / Résumé</a>
+        <a href="#story" data-scroll-link>01 / Why VitalForge</a>
+        <a href="#capabilities" data-scroll-link>02 / Experience</a>
+        <a href="#architecture" data-scroll-link>03 / Technology</a>
+        <a href="#timeline" data-scroll-link>04 / Method</a>
         <a href="#downloads" data-scroll-link>05 / Downloads</a>
-        <a href="#outcomes" data-scroll-link>06 / Outcomes</a>
+        <a href="#outcomes" data-scroll-link>06 / The promise</a>
       </div>
     </header>
 
@@ -54,13 +54,13 @@ app.innerHTML = `
         <div class="hero-contour contour-one" aria-hidden="true"></div>
         <div class="hero-contour contour-two" aria-hidden="true"></div>
         <div class="hero-copy page-width">
-          <p class="eyebrow light"><span class="eyebrow-dot"></span> Independent project / 2024—25</p>
-          <h1 id="hero-title" class="hero-title"><span>Build a</span><span class="hero-title-accent">healthier</span><span>baseline.</span></h1>
+          <p class="eyebrow light"><span class="eyebrow-dot"></span> The desktop health companion for everyday momentum</p>
+          <h1 id="hero-title" class="hero-title"><span>Make your</span><span class="hero-title-accent">everyday</span><span>stronger.</span></h1>
           <div class="hero-bottom">
-            <p class="hero-intro">VitalForge turns the quiet work of a healthy day into something you can see, shape, and keep moving.</p>
+            <p class="hero-intro">VitalForge brings your health signals, routines, and progress into one calm place — so better days feel easier to repeat.</p>
             <div class="hero-actions">
-              <a class="button button-lime" href="#story" data-scroll-link>Read the case study ${icon("arrow", 17)}</a>
-              <a class="text-link light-link" href="#architecture" data-scroll-link>${icon("play", 17)} See how it works</a>
+              <a class="button button-lime" href="#downloads" data-scroll-link>Get the desktop app ${icon("arrow", 17)}</a>
+              <a class="text-link light-link" href="#capabilities" data-scroll-link>${icon("play", 17)} Explore VitalForge</a>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@ app.innerHTML = `
 
       <section class="signal-band" aria-label="Project summary">
         <div class="page-width signal-row">
-          <span class="signal-label">A project résumé for</span>
+          <span class="signal-label">One system for</span>
           <span class="signal-divider"></span>
           <span>Health tracking</span><span class="signal-dot">✳</span><span>Nutrition</span><span class="signal-dot">✳</span><span>Movement</span><span class="signal-dot">✳</span><span>Habits</span>
         </div>
@@ -93,22 +93,22 @@ app.innerHTML = `
 
       <section class="story section-paper" id="story" aria-labelledby="story-title">
         <div class="page-width section-split story-grid">
-          <div class="section-label-wrap reveal"><p class="section-number">01</p><p class="section-label">The starting point</p><span class="section-line"></span></div>
+            <div class="section-label-wrap reveal"><p class="section-number">01</p><p class="section-label">The VitalForge point of view</p><span class="section-line"></span></div>
           <div class="story-content">
-            <p class="eyebrow reveal">A whole-day view</p>
+            <p class="eyebrow reveal">A better relationship with the day</p>
             <h2 id="story-title" class="display-title reveal">Health is not a single <em>number.</em></h2>
             <div class="story-copy-grid">
-              <p class="lead reveal">Most fitness tools ask users to become data analysts. VitalForge starts somewhere softer: give the day a shape, then make progress visible.</p>
-              <div class="body-stack reveal"><p>The original brief was intentionally practical — a desktop app that could bring profiles, daily tracking, workouts, nutrition, and progress into one dependable place.</p><p>The design challenge was to make a system with a lot of data feel calm enough to return to every morning.</p></div>
+              <p class="lead reveal">Most fitness tools turn a healthy life into a dashboard of demands. VitalForge gives the day a shape, then makes progress feel visible, human, and within reach.</p>
+              <div class="body-stack reveal"><p>From a morning check-in to the last meaningful choice of the day, VitalForge keeps the signals that matter close at hand: movement, nutrition, sleep, water, goals, and momentum.</p><p>It is designed for consistency over intensity — a quiet desktop companion that helps you notice what is working and choose what comes next.</p></div>
             </div>
-            <div class="quote-card reveal"><span class="quote-mark">“</span><p>Make the invisible work measurable — without making it feel like work.</p><span class="quote-byline">Project north star / VitalForge</span></div>
+              <div class="quote-card reveal"><span class="quote-mark">“</span><p>Make the invisible work measurable — without making it feel like work.</p><span class="quote-byline">The VitalForge principle</span></div>
           </div>
         </div>
       </section>
 
       <section class="capabilities section-paper" id="capabilities" aria-labelledby="capabilities-title">
         <div class="page-width">
-          <div class="section-heading-row reveal"><div><p class="eyebrow">The product surface</p><h2 id="capabilities-title" class="section-title">One day.<br><em>Six signals.</em></h2></div><p class="section-aside">A clear view of the inputs that shape energy, consistency, and long-term progress.</p></div>
+          <div class="section-heading-row reveal"><div><p class="eyebrow">The VitalForge experience</p><h2 id="capabilities-title" class="section-title">One calm system.<br><em>Every signal.</em></h2></div><p class="section-aside">Everything you need to understand the day, make a better next choice, and keep momentum visible.</p></div>
           <div class="capability-grid">
             <article class="capability-card capability-feature reveal"><div class="capability-top"><span class="capability-index">01</span><span class="capability-icon icon-profile">${icon("leaf", 21)}</span></div><h3>Personal baseline</h3><p>Profile setup captures the context behind the numbers — age, goals, activity level, water, sleep, and steps.</p><div class="micro-ui profile-ui"><span></span><span></span><span></span><b></b></div></article>
             <article class="capability-card reveal"><div class="capability-top"><span class="capability-index">02</span><span class="capability-icon">◎</span></div><h3>Daily rhythm</h3><p>Water, steps, sleep, weight, and notes become a simple, repeatable check-in.</p><div class="tiny-bars"><i style="height:42%"></i><i style="height:68%"></i><i style="height:50%"></i><i style="height:84%"></i><i style="height:71%"></i><i style="height:92%"></i></div></article>
@@ -123,7 +123,7 @@ app.innerHTML = `
       <section class="architecture section-dark" id="architecture" aria-labelledby="architecture-title">
         <div class="architecture-gridline" aria-hidden="true"></div>
         <div class="page-width">
-          <div class="section-heading-row dark-row reveal"><div><p class="eyebrow light">Under the surface</p><h2 id="architecture-title" class="section-title light-title">A calm interface<br>on a <em>clear system.</em></h2></div><p class="section-aside light-aside">The visual language stays light because the underlying structure is intentional: separate responsibilities, explicit data, dependable feedback.</p></div>
+          <div class="section-heading-row dark-row reveal"><div><p class="eyebrow light">Built with intention</p><h2 id="architecture-title" class="section-title light-title">A calm interface<br>on a <em>clear foundation.</em></h2></div><p class="section-aside light-aside">The experience stays approachable because the foundation is deliberate: clear responsibilities, dependable data, and feedback you can trust.</p></div>
           <div class="flow-diagram reveal" aria-label="VitalForge architecture flow">
             <div class="flow-node flow-user"><span class="node-index">01</span><strong>Person</strong><small>profile + goals</small></div><span class="flow-arrow">→</span><div class="flow-node flow-ui"><span class="node-index">02</span><strong>Tkinter UI</strong><small>screens + components</small></div><span class="flow-arrow">→</span><div class="flow-node flow-logic"><span class="node-index">03</span><strong>Queries + logic</strong><small>validation + state</small></div><span class="flow-arrow">→</span><div class="flow-node flow-db"><span class="node-index">04</span><strong>MySQL</strong><small>durable progress</small></div>
           </div>
@@ -137,7 +137,7 @@ app.innerHTML = `
 
       <section class="stack section-paper" aria-labelledby="stack-title">
         <div class="page-width stack-layout">
-          <div class="stack-copy"><p class="eyebrow reveal">The toolkit</p><h2 id="stack-title" class="section-title reveal">Made with<br><em>useful parts.</em></h2><p class="stack-intro reveal">No black boxes. Just a focused stack selected to make a desktop product feel clear, testable, and complete.</p><a class="text-link green-link reveal" href="#timeline" data-scroll-link>Follow the build ${icon("arrow", 16)}</a></div>
+          <div class="stack-copy"><p class="eyebrow reveal">The foundation</p><h2 id="stack-title" class="section-title reveal">Technology with<br><em>a human pace.</em></h2><p class="stack-intro reveal">VitalForge is focused technology: a dependable desktop experience, explicit data, and visual feedback that supports real habits.</p><a class="text-link green-link reveal" href="#architecture" data-scroll-link>See how it is built ${icon("arrow", 16)}</a></div>
           <div class="stack-list reveal">
             <div class="stack-row"><span>Language</span><strong>Python</strong><small>application logic</small></div>
             <div class="stack-row"><span>Interface</span><strong>Tkinter</strong><small>desktop UI</small></div>
@@ -149,17 +149,17 @@ app.innerHTML = `
       </section>
 
       <section class="signals section-lime" aria-labelledby="signals-title">
-        <div class="page-width signals-layout"><div><p class="eyebrow dark-eyebrow">Project signals</p><h2 id="signals-title" class="signals-title">The work, in<br><em>plain numbers.</em></h2></div><div class="signal-metrics"><div class="big-metric reveal"><strong data-count="6">0</strong><span>core health signals<br>tracked per day</span></div><div class="big-metric reveal"><strong data-count="300" data-suffix="+">0</strong><span>nutrition entries<br>in the data library</span></div><div class="big-metric reveal"><strong data-count="8">0</strong><span>relational tables<br>behind the experience</span></div><div class="big-metric reveal"><strong data-count="100" data-suffix="%">0</strong><span>focused on<br>the daily loop</span></div></div></div>
+        <div class="page-width signals-layout"><div><p class="eyebrow dark-eyebrow">Made for the everyday</p><h2 id="signals-title" class="signals-title">The details that<br><em>move you forward.</em></h2></div><div class="signal-metrics"><div class="big-metric reveal"><strong data-count="6">0</strong><span>core health signals<br>tracked per day</span></div><div class="big-metric reveal"><strong data-count="300" data-suffix="+">0</strong><span>nutrition entries<br>ready to explore</span></div><div class="big-metric reveal"><strong data-count="8">0</strong><span>connected data layers<br>behind the experience</span></div><div class="big-metric reveal"><strong data-count="100" data-suffix="%">0</strong><span>focused on<br>your daily rhythm</span></div></div></div>
       </section>
 
       <section class="timeline section-paper" id="timeline" aria-labelledby="timeline-title">
         <div class="page-width">
-          <div class="section-heading-row reveal"><div><p class="eyebrow">Project résumé</p><h2 id="timeline-title" class="section-title">From brief<br>to <em>baseline.</em></h2></div><p class="section-aside">A delivery trail that keeps the product story close to the decisions that shaped it.</p></div>
+          <div class="section-heading-row reveal"><div><p class="eyebrow">The VitalForge method</p><h2 id="timeline-title" class="section-title">From intention<br>to <em>momentum.</em></h2></div><p class="section-aside">A simple rhythm for turning awareness into action, and action into a way of living that lasts.</p></div>
           <div class="timeline-list">
-            <article class="timeline-item reveal"><div class="timeline-marker"><span>01</span><i></i></div><div class="timeline-meta"><span>Frame</span><small>01 / 04</small></div><div class="timeline-content"><h3>Define the day</h3><p>Turn a broad “fitness tracker” brief into a manageable loop: profile, log, move, reflect.</p><div class="timeline-tags"><span>scope</span><span>audience</span><span>habits</span></div></div></article>
-            <article class="timeline-item reveal"><div class="timeline-marker"><span>02</span><i></i></div><div class="timeline-meta"><span>Shape</span><small>02 / 04</small></div><div class="timeline-content"><h3>Design the language</h3><p>Create a reusable visual system that makes forms, cards, charts, and feedback feel like one product.</p><div class="timeline-tags"><span>components</span><span>tokens</span><span>states</span></div></div></article>
-            <article class="timeline-item reveal"><div class="timeline-marker"><span>03</span><i></i></div><div class="timeline-meta"><span>Build</span><small>03 / 04</small></div><div class="timeline-content"><h3>Connect the signals</h3><p>Wire the Tkinter screens to validation, MySQL queries, seeded food and workout data, and progress charts.</p><div class="timeline-tags"><span>python</span><span>mysql</span><span>matplotlib</span></div></div></article>
-            <article class="timeline-item reveal"><div class="timeline-marker"><span>04</span><i></i></div><div class="timeline-meta"><span>Reflect</span><small>04 / 04</small></div><div class="timeline-content"><h3>Make it dependable</h3><p>Keep the edges readable: demo mode, error paths, setup guidance, and tests that protect the data connection.</p><div class="timeline-tags"><span>quality</span><span>documentation</span><span>handoff</span></div></div></article>
+            <article class="timeline-item reveal"><div class="timeline-marker"><span>01</span><i></i></div><div class="timeline-meta"><span>Notice</span><small>01 / 04</small></div><div class="timeline-content"><h3>See the whole day</h3><p>Start with the signals that shape how you feel: your baseline, your patterns, and the context behind the numbers.</p><div class="timeline-tags"><span>baseline</span><span>awareness</span><span>context</span></div></div></article>
+            <article class="timeline-item reveal"><div class="timeline-marker"><span>02</span><i></i></div><div class="timeline-meta"><span>Choose</span><small>02 / 04</small></div><div class="timeline-content"><h3>Make the next choice</h3><p>Turn intention into a practical next step with workouts, food, hydration, sleep, and goals that feel within reach.</p><div class="timeline-tags"><span>movement</span><span>nutrition</span><span>recovery</span></div></div></article>
+            <article class="timeline-item reveal"><div class="timeline-marker"><span>03</span><i></i></div><div class="timeline-meta"><span>Repeat</span><small>03 / 04</small></div><div class="timeline-content"><h3>Keep the rhythm</h3><p>Return to a clear, encouraging loop that makes consistency easier than starting over.</p><div class="timeline-tags"><span>routine</span><span>feedback</span><span>progress</span></div></div></article>
+            <article class="timeline-item reveal"><div class="timeline-marker"><span>04</span><i></i></div><div class="timeline-meta"><span>Reflect</span><small>04 / 04</small></div><div class="timeline-content"><h3>Let progress speak</h3><p>Use a living view of your data to understand what is changing — and give the next day somewhere to begin.</p><div class="timeline-tags"><span>clarity</span><span>confidence</span><span>momentum</span></div></div></article>
           </div>
         </div>
       </section>
@@ -176,12 +176,12 @@ app.innerHTML = `
 
       <section class="outcomes section-dark" id="outcomes" aria-labelledby="outcomes-title">
         <div class="page-width outcomes-grid">
-          <div class="outcomes-intro reveal"><p class="eyebrow light">What remains</p><h2 id="outcomes-title" class="section-title light-title">A stronger<br><em>starting line.</em></h2><p>VitalForge is less about chasing a perfect day and more about giving the next day somewhere to begin.</p><a class="button button-lime" href="#top" data-scroll-link>Back to the beginning ${icon("arrow", 17)}</a></div>
+          <div class="outcomes-intro reveal"><p class="eyebrow light">The VitalForge promise</p><h2 id="outcomes-title" class="section-title light-title">A stronger<br><em>way forward.</em></h2><p>VitalForge is not asking for a perfect day. It is giving every day a clearer next step — and making the progress worth returning to.</p><a class="button button-lime" href="#downloads" data-scroll-link>Get VitalForge ${icon("arrow", 17)}</a></div>
           <div class="outcome-cards"><article class="outcome-card reveal"><span>01 / Achievement</span><h3>A complete loop</h3><p>From account and profile setup to daily logs, workouts, food, and charts — the experience has a beginning, middle, and return path.</p></article><article class="outcome-card reveal"><span>02 / Lesson</span><h3>Clarity is a feature</h3><p>When the system is explicit, the interface can be quiet. Strong architecture gives the product room to feel human.</p></article><article class="outcome-card reveal"><span>03 / Next</span><h3>Bring the baseline closer</h3><p>The next horizon is portability: make the same measured, encouraging loop available wherever the day happens.</p></article></div>
         </div>
       </section>
 
-      <footer class="site-footer section-paper"><div class="page-width footer-row"><div class="footer-brand"><img class="brand-logo" src="/assets/logo.png" alt="VitalForge logo" /><span><b>Vital</b><em>Forge</em></span></div><p>Project portfolio / a healthier baseline, built deliberately.</p><a href="#top" class="footer-top" data-scroll-link>↑ Top</a></div><div class="page-width footer-bottom"><span>Python · Tkinter · MySQL · Matplotlib</span><span>Independent build / 2024—25</span></div></footer>
+      <footer class="site-footer section-paper"><div class="page-width footer-row"><div class="footer-brand"><img class="brand-logo" src="/assets/logo.png" alt="VitalForge logo" /><span><b>Vital</b><em>Forge</em></span></div><p>VitalForge / a healthier baseline, built deliberately.</p><a href="#top" class="footer-top" data-scroll-link>↑ Top</a></div><div class="page-width footer-bottom"><span>Python · Tkinter · MySQL · Matplotlib</span><span>Built for everyday momentum</span></div></footer>
     </main>
   </div>
 `;
@@ -265,6 +265,14 @@ if (prefersReducedMotion) {
   gsap.to(".contour-two", { yPercent: -20, rotate: -3, ease: "none", scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: 1 } });
   gsap.to(".hero-orbit", { rotate: 22, ease: "none", scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: 1.1 } });
   gsap.to(".timeline-marker i", { scaleY: 1, stagger: 0.18, ease: "none", scrollTrigger: { trigger: ".timeline-list", start: "top 70%", end: "bottom 75%", scrub: 0.7 } });
+
+  gsap.to(".orbit-dot", { scale: 1.35, opacity: .55, duration: 1.8, stagger: .35, repeat: -1, yoyo: true, ease: "sine.inOut" });
+  gsap.to(".hero-orbit .ring-a", { scale: 1.08, opacity: .48, duration: 4.5, repeat: -1, yoyo: true, ease: "sine.inOut" });
+  gsap.to(".hero-orbit .ring-b", { scale: .92, opacity: .6, duration: 3.6, repeat: -1, yoyo: true, ease: "sine.inOut", delay: .4 });
+  gsap.to(".dashboard-preview", { y: -8, duration: 3.8, repeat: -1, yoyo: true, ease: "sine.inOut" });
+  gsap.to(".dashboard-ring", { boxShadow: "0 0 0 11px rgba(213,238,122,.07), 0 0 28px rgba(213,238,122,.18)", duration: 2.4, repeat: -1, yoyo: true, ease: "sine.inOut" });
+  gsap.fromTo(".capability-card", { y: 22, opacity: .6 }, { y: 0, opacity: 1, stagger: .08, duration: .9, ease: "power3.out", scrollTrigger: { trigger: ".capability-grid", start: "top 78%", once: true } });
+  gsap.fromTo(".flow-node", { y: 16, opacity: .45 }, { y: 0, opacity: 1, stagger: .14, duration: .7, ease: "back.out(1.4)", scrollTrigger: { trigger: ".flow-diagram", start: "top 82%", once: true } });
 }
 
 const countElements = document.querySelectorAll("[data-count]");
@@ -287,9 +295,24 @@ countElements.forEach((element) => {
 });
 
 if (!isTouch && !prefersReducedMotion) {
+  document.querySelectorAll(".button, .header-cta").forEach((button) => {
+    button.addEventListener("pointermove", (event) => {
+      const bounds = button.getBoundingClientRect();
+      const x = (event.clientX - bounds.left - bounds.width / 2) * .12;
+      const y = (event.clientY - bounds.top - bounds.height / 2) * .16;
+      gsap.to(button, { x, y, duration: .35, ease: "power3.out", overwrite: true });
+    });
+    button.addEventListener("pointerleave", () => gsap.to(button, { x: 0, y: 0, duration: .5, ease: "elastic.out(1, .45)", overwrite: true }));
+  });
+
   document.querySelectorAll(".capability-card, .outcome-card, .flow-node").forEach((card) => {
     card.addEventListener("mouseenter", () => gsap.to(card, { y: -6, duration: 0.35, ease: "power2.out" }));
     card.addEventListener("mouseleave", () => gsap.to(card, { y: 0, duration: 0.45, ease: "power2.out" }));
+    card.addEventListener("pointermove", (event) => {
+      const bounds = card.getBoundingClientRect();
+      card.style.setProperty("--spot-x", `${((event.clientX - bounds.left) / bounds.width) * 100}%`);
+      card.style.setProperty("--spot-y", `${((event.clientY - bounds.top) / bounds.height) * 100}%`);
+    });
   });
 
   document.querySelectorAll("[data-tilt-card]").forEach((card) => {
