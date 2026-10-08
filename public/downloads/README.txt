@@ -2,8 +2,9 @@ VitalForge desktop release assets
 
 Current release status:
 
-- vitalforge.exe — verified Windows 1.0.0 desktop release, linked from the website
-- macOS — build configuration present in the application repository; native build and verification pending
-- Linux — Debian/AppImage packaging configuration present; native build and verification pending
+- Windows desktop build, v1.0.0
+- macOS application bundle
+- Linux portable AppImage
+- Linux Debian package
 
-When publishing a new verified release, keep the Windows filename stable. Publish macOS and Linux artifacts only after building and testing them on their target platforms.
+The portfolio links to the four public artifact downloads synced from the VitalForge repository. GitHub Releases are not published yet. The binaries are hosted externally because GitHub rejects files over 100 MB.

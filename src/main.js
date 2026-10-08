@@ -166,12 +166,15 @@ app.innerHTML = `
 
       <section class="downloads section-paper" id="downloads" aria-labelledby="downloads-title">
         <div class="page-width">
-          <div class="section-heading-row reveal"><div><p class="eyebrow">Take it with you</p><h2 id="downloads-title" class="section-title">Get<br><em>VitalForge.</em></h2></div><p class="section-aside">VitalForge 1.0.0 is available for Windows today. macOS and Linux packaging is in progress and will be published after native verification.</p></div>
+          <div class="section-heading-row reveal"><div><p class="eyebrow">Take it with you</p><h2 id="downloads-title" class="section-title">Get<br><em>VitalForge.</em></h2></div><p class="section-aside">The latest desktop build outputs are synced from the VitalForge repository: Windows, macOS, and two Linux distributions. GitHub Releases are not published yet, so these downloads point to the current verified artifacts.</p></div>
           <div class="download-grid">
-            <article class="download-card download-card-windows reveal" data-tilt-card><div class="download-card-head"><span class="platform-chip">Available now</span><span class="platform-glyph">▣</span></div><div class="desktop-window" aria-hidden="true"><span class="window-bar"><i></i><i></i><i></i></span><span class="window-content"><b>VitalForge</b><em>v1.0.0 · .exe</em></span></div><div class="download-card-copy"><h3>VitalForge for Windows</h3><p>The verified Windows desktop release with daily tracking, workouts, nutrition, goals, and progress charts.</p><a class="download-button" href="/downloads/vitalforge.exe" download>Download for Windows <span>↓</span></a></div></article>
-            <article class="download-card download-card-macos reveal" data-tilt-card><div class="download-card-head"><span class="platform-chip">Coming soon</span><span class="platform-glyph">●</span></div><div class="desktop-window mac-window" aria-hidden="true"><span class="window-bar"><i></i><i></i><i></i></span><span class="window-content"><b>VitalForge</b><em>macOS · in progress</em></span></div><div class="download-card-copy"><h3>VitalForge for macOS</h3><p>The macOS build configuration is ready; publishing follows a native build and verification pass.</p><span class="download-button download-button-disabled" aria-disabled="true">Coming soon <span>→</span></span></div></article>
+            <article class="download-card download-card-windows reveal" data-tilt-card><div class="download-card-head"><span class="platform-chip">Windows · v1.0.0</span><span class="platform-glyph">▣</span></div><div class="desktop-window" aria-hidden="true"><span class="window-bar"><i></i><i></i><i></i></span><span class="window-content"><b>VitalForge</b><em>Windows · .exe</em></span></div><div class="download-card-copy"><h3>VitalForge for Windows</h3><p>The Windows desktop build with daily tracking, workouts, nutrition, goals, and progress charts.</p><a class="download-button" href="https://files.manuscdn.com/user_upload_by_module/session_file/310519663950369269/zrWgXVTUyCEQixFf.exe" download>Download .exe <span>↓</span></a></div></article>
+            <article class="download-card download-card-macos reveal" data-tilt-card><div class="download-card-head"><span class="platform-chip">Apple · synced</span><span class="platform-glyph">●</span></div><div class="desktop-window mac-window" aria-hidden="true"><span class="window-bar"><i></i><i></i><i></i></span><span class="window-content"><b>VitalForge</b><em>macOS · .zip</em></span></div><div class="download-card-copy"><h3>VitalForge for macOS</h3><p>The packaged macOS application bundle, zipped for a straightforward download and extraction.</p><a class="download-button" href="https://files.manuscdn.com/user_upload_by_module/session_file/310519663950369269/PCHqXFzRnzrLlQCn.zip" download>Download .zip <span>↓</span></a></div></article>
+            <article class="download-card download-card-linux reveal" data-tilt-card><div class="download-card-head"><span class="platform-chip">Linux · portable</span><span class="platform-glyph">⌁</span></div><div class="desktop-window linux-window" aria-hidden="true"><span class="window-bar"><i></i><i></i><i></i></span><span class="window-content"><b>VitalForge</b><em>Linux · AppImage</em></span></div><div class="download-card-copy"><h3>VitalForge AppImage</h3><p>A portable Linux build for distributions that support AppImage applications.</p><a class="download-button" href="https://files.manuscdn.com/user_upload_by_module/session_file/310519663950369269/EAGbacCiKqUlbDIF.AppImage" download>Download AppImage <span>↓</span></a></div></article>
+            <article class="download-card download-card-debian reveal" data-tilt-card><div class="download-card-head"><span class="platform-chip">Linux · Debian</span><span class="platform-glyph">◒</span></div><div class="desktop-window debian-window" aria-hidden="true"><span class="window-bar"><i></i><i></i><i></i></span><span class="window-content"><b>VitalForge</b><em>Linux · .deb</em></span></div><div class="download-card-copy"><h3>VitalForge for Debian</h3><p>The amd64 Debian package for Debian-based Linux installations.</p><a class="download-button" href="https://files.manuscdn.com/user_upload_by_module/session_file/310519663950369269/LuWEdoWeDcOQnHFx.deb" download>Download .deb <span>↓</span></a></div></article>
           </div>
-          <div class="release-status reveal" aria-label="Release status"><span class="release-status-label">Release status</span><div><b>Windows</b><span>Available now · v1.0.0</span></div><div><b>macOS</b><span>Build configured · verification pending</span></div><div><b>Linux</b><span>Packaging configured · verification pending</span></div></div>
+          <div class="download-notice" data-download-notice role="status" aria-live="polite"></div>
+          <div class="release-status reveal" aria-label="Release status"><span class="release-status-label">Release status</span><div><b>Windows</b><span>Synced · v1.0.0</span></div><div><b>macOS</b><span>App bundle synced</span></div><div><b>Linux</b><span>AppImage + Debian synced</span></div><div><b>GitHub Releases</b><span>Not published yet</span></div></div>
         </div>
       </section>
 
@@ -222,6 +225,17 @@ document.querySelectorAll("[data-scroll-link]").forEach((link) => {
     closeMenu();
     if (lenis && !prefersReducedMotion) lenis.scrollTo(target, { offset: -80, duration: 1.1 });
     else target.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth" });
+  });
+});
+
+const downloadNotice = document.querySelector("[data-download-notice]");
+document.querySelectorAll("a.download-button[download]").forEach((link) => {
+  link.addEventListener("click", () => {
+    if (!downloadNotice) return;
+    const name = link.closest(".download-card")?.querySelector("h3")?.textContent || "VitalForge";
+    downloadNotice.textContent = `Download started — ${name}.`;
+    downloadNotice.classList.add("is-visible");
+    window.setTimeout(() => downloadNotice.classList.remove("is-visible"), 4200);
   });
 });
 
