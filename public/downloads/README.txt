@@ -7,4 +7,4 @@ Current release status:
 - Linux portable AppImage
 - Linux Debian package
 
-The portfolio links to the four public artifact downloads synced from the VitalForge repository. GitHub Releases are not published yet. The binaries are hosted externally because GitHub rejects files over 100 MB.
+The official website links to the four public artifact downloads from the VitalForge v1.0.0 GitHub Release. SHA-256 checksums are included with the release for verification.
